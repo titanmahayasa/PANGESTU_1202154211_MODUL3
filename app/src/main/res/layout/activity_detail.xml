@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pangestutitan.pangestu_1202154211_modul3.DetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/waterImageDetail"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:adjustViewBounds="true" />
+
+        <TextView
+            android:id="@+id/titleDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/waterImageDetail"
+            android:textSize="15dp"
+            android:text="Title" />
+
+        <TextView
+            android:id="@+id/subTitleDetail"
+            style="@style/TextAppearance.AppCompat.Subhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleDetail"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae semper quam. In a metus ut nisl pharetra hendrerit et a leo. Curabitur nec sapien odio. Vestibulum a mollis felis. Cras molestie felis nibh, ut maximus mauris feugiat tincidunt. Curabitur ultricies eros sed ipsum pulvinar vehicula. Maecenas volutpat, massa sit amet aliquam eleifend, massa lorem tempor sapien, eget finibus massa dolor molestie lorem. Suspendisse at purus mauris. Proin nibh ligula, suscipit vel pharetra posuere, bibendum id lorem." />
+
+        <ImageView
+            android:id="@+id/airLevel"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/subTitleDetail"
+            android:src="@drawable/ic_battery_20_black_24dp"/>
+
+        <ImageView
+            android:id="@+id/btnPlus"
+            android:src="@drawable/ic_plus"
+            android:layout_below="@id/airLevel"
+            android:layout_toEndOf="@+id/airLevel"
+            android:layout_toRightOf="@id/airLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="addLevel"/>
+
+        <TextView
+            android:id="@+id/airIndicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textSize="20dp"
+            android:layout_below="@id/airLevel"
+            android:layout_centerHorizontal="true"
+            android:text="1L" />
+
+
+        <ImageView
+            android:id="@+id/btnMinus"
+            android:src="@drawable/ic_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/airLevel"
+            android:layout_toLeftOf="@id/airLevel"
+            android:onClick="decreaseLevel"/>
+    </RelativeLayout>
+
+
+</ScrollView>
